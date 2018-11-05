@@ -137,7 +137,7 @@ try:
 except KeyError:
     TARGET_ARCH = sp.check_output([uname, "-m"]).strip()
 
-CMAKE_DIR=os.path.realpath(os.path.join("usr/tmp/ifcopenshell", "cmake"))
+CMAKE_DIR=os.path.realpath(os.path.join("IfcOpenShell", "cmake"))
 
 try:
     DEPS_DIR = os.environ["DEPS_DIR"]
